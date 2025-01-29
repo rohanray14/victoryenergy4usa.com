@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'American Captain', sans-serif;
   color: white;
   background-color: #f4f4f4;
 }
@@ -25,9 +25,14 @@ body {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  max-height: 50px; /* Adjust this value to fit your navbar height */
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -104,10 +109,19 @@ body {
 
 .achievements-title {
   text-align: center;
-  color: white;
+  color: #ffcc00;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.35rem;
   text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.achievements-subtitle {
+  text-align: center;
+  color: white; /* White color for emphasis */
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -333,6 +347,22 @@ body {
   color: #ffcc00;
 }
 
+/* Add these new styles while keeping all existing CSS */
+
+
+.trend-chart-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 600px; /* Increase the height */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Keep all your existing CSS styles exactly as they are, 
+   just remove the .flag-comparison related styles */
+
 
 /* Solutions Section */
 .solutions-section {
@@ -351,7 +381,7 @@ body {
 .solutions-subtitle {
   text-align: center;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 4rem;
 }
 
@@ -397,9 +427,10 @@ body {
 }
 
 /* Call to Action Section */
+/* Call to Action Section */
 .cta-section {
   background: linear-gradient(to right, #00205b, #990000);
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .cta-content {
@@ -412,6 +443,7 @@ body {
 
 .cta-image-container {
   flex: 1;
+  max-width: 500px;
 }
 
 .cta-image {
@@ -429,12 +461,21 @@ body {
   font-size: 3rem;
   color: #ffcc00;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .cta-text p {
   font-size: 1.2rem;
   color: white;
   margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .cta-button {
@@ -445,11 +486,94 @@ body {
   border-radius: 30px;
   color: #1a1a1a;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .cta-button:hover {
   transform: scale(1.05);
+  background: #ffd700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.social-icon-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.instagram-icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0);
+}
+
+/* Responsive Design for CTA Section */
+@media (max-width: 1200px) {
+  .cta-content {
+    gap: 3rem;
+  }
+  
+  .cta-text h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .cta-image-container {
+    max-width: 400px;
+  }
+  
+  .cta-text {
+    text-align: center;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-text h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-text p {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .social-icon-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .instagram-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Footer */

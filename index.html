@@ -1,285 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atomic Americana</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Energy</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- PropTypes Library -->
+    <script src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+
+    <!-- Recharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.1.9/Recharts.min.js"></script>
+
+    <!-- Babel for JSX Transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Optional: Your Custom Scripts (if any) -->
+    <!-- <script src="app.js" type="text/babel"></script> -->
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Atomic Americana</div>
-      <ul class="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#our-reactors">Our Reactors</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#news">News</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/victory.png" alt="Victory Energy Logo" class="logo-image">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#our-reactors">Our Reactors</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="image-overlay"></div>
-      <div class="hero-content">
-        <h1 class="title">ATOMIC AMERICANA</h1>
-        <p class="slogan">MAKE NUCLEAR GREAT AGAIN</p>
-      </div>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="image-overlay"></div>
+            <div class="hero-content">
+                <h1 class="title">VICTORY ENERGY</h1>
+                <p class="slogan">MAKE NUCLEAR GREAT AGAIN.</p>
+            </div>
+        </section>
 
-    <!-- Achievements Section -->
-    <section class="achievements-section">
-      <h2 class="achievements-title">American Excellence</h2>
-      
-      <div class="slider-container">
-        <div class="achievements-slider">
-          <div class="slide">
-            <img src="images/image2.png" alt="Moon Landing" class="slide-image">
-            <div class="slide-content">
-              <h3 class="slide-title">Space Race Victory</h3>
-              <p class="slide-description">First nation to put humans on the moon, marking mankind's greatest leap forward.</p>
-            </div>
-          </div>
-          
-          <div class="slide">
-            <img src="images/image1.png" alt="Uncle Sam" class="slide-image">
-            <div class="slide-content">
-              <h3 class="slide-title">World War Success</h3>
-              <p class="slide-description">Leading the Allies to victory and shaping the modern world.</p>
-            </div>
-          </div>
-          
-          <div class="slide">
-            <img src="images/image11.png" alt="Cold War Victory" class="slide-image">
-            <div class="slide-content">
-              <h3 class="slide-title">Cold War Triumph</h3>
-              <p class="slide-description">Emerging victorious in the decades-long Cold War, establishing America as the world's leading superpower.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="slider-controls">
-          <button class="slider-button prev-button">&#8249;</button>
-          <button class="slider-button next-button">&#8250;</button>
-        </div>
-        
-        <div class="slide-indicator">
-          <div class="indicator active"></div>
-          <div class="indicator"></div>
-          <div class="indicator"></div>
-        </div>
-      </div>
-    </section>
+        <!-- Achievements Section -->
+        <section class="achievements-section">
+            <h2 class="achievements-title">American Excellence</h2>
+            <!-- Add the subheading here -->
+            <p class="achievements-subtitle">We've done it before! Let's do it again!</p>
 
-    <!-- Reality Check Section -->
-    <section class="reality-check">
-      <div class="reality-content">
-        <h2 class="reality-title">America's Nuclear Wake-Up Call</h2>
-        
-        <div class="reality-grid">
-          <div class="charts-column">
-            <div class="chart-card primary">
-              <img src="images/image3.png" alt="Nuclear Generation Forecast" class="chart-image">
-              <div class="chart-overlay">
-                <h3>China's Nuclear Surge</h3>
-                <p>Set to overtake US by early 2030s</p>
-              </div>
+            <div class="slider-container">
+                <div class="achievements-slider">
+                    <div class="slide">
+                        <img src="images/image2.png" alt="Moon Landing" class="slide-image">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Space Race Victory</h3>
+                            <p class="slide-description">First nation to put humans on the moon, marking mankind's greatest leap forward.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/image1.png" alt="Uncle Sam" class="slide-image">
+                        <div class="slide-content">
+                            <h3 class="slide-title">World War Success</h3>
+                            <p class="slide-description">Leading the Allies to victory and shaping the modern world.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="images/image11.png" alt="Cold War Victory" class="slide-image">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Cold War Triumph</h3>
+                            <p class="slide-description">Emerging victorious in the decades-long Cold War, establishing America as the world's leading superpower.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-button prev-button">&#8249;</button>
+                    <button class="slider-button next-button">&#8250;</button>
+                </div>
+                
+                <div class="slide-indicator">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
             </div>
-            <div class="chart-card secondary">
-              <img src="images/image4.png" alt="China's Nuclear Growth" class="chart-image">
-              <div class="chart-overlay">
-                <h3>53.2 GW</h3>
-                <p>China's rapidly expanding nuclear capacity</p>
-              </div>
-            </div>
-          </div>
+        </section>
 
-          <div class="comparison-column">
-            <h3 class="comparison-title">The Shifting Balance</h3>
-            <div class="flag-comparison">
-              <div class="flag-pair">
-                <img src="images/image5.png" alt="US Nuclear Status" class="flag-image">
-                <div class="direction-indicator down">↓</div>
-              </div>
-              <div class="flag-pair">
-                <img src="images/image6.png" alt="China Nuclear Status" class="flag-image">
-                <div class="direction-indicator up">↑</div>
-              </div>
+        <!-- Reality Check Section -->
+        <section class="reality-check">
+            <div class="reality-content">
+                <h2 class="reality-title">America's Nuclear Wake-Up Call</h2>
+                
+                <div class="reality-grid">
+                    <!-- Left Column - Main Charts -->
+                    <div class="charts-column">
+                        <div class="chart-card primary">
+                            <img src="images/image3.png" alt="Nuclear Generation Forecast" class="chart-image">
+                            <div class="chart-overlay">
+                                <h3>China's Nuclear Surge</h3>
+                                <p>Set to overtake US by early 2030s</p>
+                            </div>
+                        </div>
+                        <div class="chart-card secondary">
+                            <img src="images/image4.png" alt="China's Nuclear Growth" class="chart-image">
+                            <div class="chart-overlay">
+                                <h3>53.2 GW</h3>
+                                <p>China's rapidly expanding nuclear capacity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="comparison-column">
+                        <h3 class="comparison-title">The Shifting Balance</h3>
+                        
+                        <!-- Trend Chart Container -->
+                        <div class="trend-chart-container">
+                            <div id="nuclearTrendChart"></div>
+                        </div>
+
+                        <!-- Stats Section -->
+                        <div class="comparison-stats">
+                            <div class="stat-item">
+                              <span class="stat-number" data-value="36">36</span>
+                              <span class="stat-label">US Reactors</span>
+                            </div>
+                            <div class="stat-item">
+                              <span class="stat-number" data-value="94">94</span>
+                              <span class="stat-label">China Reactors</span>
+                              <span class="trend-label">+6 Under Construction</span>
+                            </div>
+                            <div class="stat-item">
+                              <span class="stat-number" data-value="87">87</span>
+                              <span class="stat-label">Russia Reactors</span>
+                              <span class="trend-label">+8 Under Construction</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="comparison-stats">
-              <div class="stat-item">
-                <span class="stat-number" data-value="95">95</span>
-                <span class="stat-label">US Reactors</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-value="36">36</span>
-                <span class="stat-label">China Reactors</span>
-                <span class="trend-label">+6 Under Construction</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Solutions Section -->
     <!-- Solutions Section -->
     <section class="solutions-section">
-      <h2 class="solutions-title">Atomica America: Powering Our Future</h2>
-      <p class="solutions-subtitle"> Advancing America by safely bring back Nuclear Energy</p>
-      <div class="solutions-grid">
-        <div class="solution-card farmer">
-          <img src="images/image7.png" alt="American Farmer Supporting Nuclear" class="solution-image">
-          <div class="card-content">
-            <h3>America's Heartland Chooses Nuclear</h3>
-            <p>From conservative farmers to tech innovators, Americans are uniting behind nuclear energy</p>
+        <h2 class="solutions-title">Victory Engery: Powering America's Future</h2>
+        <p class="solutions-subtitle"> Advancing America by safely bring back Nuclear Energy</p>
+        <div class="solutions-grid">
+          <div class="solution-card farmer">
+            <img src="images/image7.png" alt="American Farmer Supporting Nuclear" class="solution-image">
+            <div class="card-content">
+              <h3>America's Heartland Chooses Nuclear</h3>
+              <p>From conservative farmers to tech innovators, Americans are uniting behind nuclear energy</p>
+            </div>
+          </div>
+          
+          <div class="solution-card tech">
+            <img src="images/image12.png" alt="Powering America's Tech Future" class="solution-image">
+            <div class="card-content">
+              <h3>Powering America's AI Revolution</h3>
+              <p>Clean, reliable nuclear power to fuel our technological leadership</p>
+            </div>
+          </div>
+          
+          <div class="solution-card recycling">
+            <img src="images/image8.png" alt="Nuclear Innovation" class="solution-image">
+            <div class="card-content">
+              <h3>Maximum Efficiency, Maximum Profit</h3>
+              <p>Advanced recycling systems delivering unmatched energy output</p>
+            </div>
           </div>
         </div>
+      </section>
+  
+      <!-- Call to Action Section -->
+      <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+            <div class="cta-image-container">
+                <img src="images/image10.png" alt="Next Generation Nuclear Leadership" class="cta-image">
+            </div>
+            <div class="cta-text">
+                <h2>Join the Nuclear Renaissance</h2>
+                <p>The next generation of American leaders is choosing nuclear</p>
+                <div class="cta-buttons">
+                    <button class="cta-button">Learn More</button>
+                    <a href="#" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="instagram-icon">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
         
-        <div class="solution-card tech">
-          <img src="images/image12.png" alt="Powering America's Tech Future" class="solution-image">
-          <div class="card-content">
-            <h3>Powering America's AI Revolution</h3>
-            <p>Clean, reliable nuclear power to fuel our technological leadership</p>
-          </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Atomic Americana</h4>
+                <p>Making America Nuclear Again</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@ictoryenergy.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Nuclear Safety</a>
+                <a href="#">Technology</a>
+                <a href="#">Research</a>
+            </div>
         </div>
         
-        <div class="solution-card recycling">
-          <img src="images/image8.png" alt="Nuclear Innovation" class="solution-image">
-          <div class="card-content">
-            <h3>Maximum Efficiency, Maximum Profit</h3>
-            <p>Advanced recycling systems delivering unmatched energy output</p>
-          </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Atomic Americana. All rights reserved.</p>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- Call to Action Section -->
-    <section class="cta-section">
-      <div class="cta-content">
-        <div class="cta-image-container">
-          <img src="images/image10.png" alt="Next Generation Nuclear Leadership" class="cta-image">
-        </div>
-        <div class="cta-text">
-          <h2>Join the Nuclear Renaissance</h2>
-          <p>The next generation of American leaders is choosing nuclear</p>
-          <button class="cta-button">Learn More</button>
-        </div>
-      </div>
-    </section>
-  </main>
+    <!-- Inline React Component for Recharts -->
+    <script type="text/babel">
+        const {
+            LineChart,
+            Line,
+            XAxis,
+            YAxis,
+            CartesianGrid,
+            Tooltip,
+            Legend,
+            ResponsiveContainer
+        } = Recharts;
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Atomic Americana</h4>
-        <p>Making America Nuclear Again</p>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Contact</h4>
-        <p>Email: info@atomicamericana.com</p>
-        <p>Phone: (555) 123-4567</p>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-        </div>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <a href="#">Nuclear Safety</a>
-        <a href="#">Technology</a>
-        <a href="#">Research</a>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Atomic Americana. All rights reserved.</p>
-    </div>
-  </footer>
+        const data = [
+            { year: '2000', USA: 800, China: 100, Russia: 150 },
+            { year: '2005', USA: 820, China: 300, Russia: 350 },
+            { year: '2010', USA: 830, China: 850, Russia: 900 },
+            { year: '2015', USA: 700, China: 1200, Russia: 1100 },
+            { year: '2020', USA: 600, China: 1500, Russia: 1300 },
+            { year: '2025', USA: 500, China: 1800, Russia: 1500 },
+        ];
 
-  <script>
-    // Slider functionality
-    const slider = document.querySelector('.achievements-slider');
-    const slides = document.querySelectorAll('.slide');
-    const prevButton = document.querySelector('.prev-button');
-    const nextButton = document.querySelector('.next-button');
-    const indicators = document.querySelectorAll('.indicator');
+        const NuclearTrendChart = () => (
+            <ResponsiveContainer width="100%" height={300}>
+                <LineChart
+                    data={data}
+                    margin={{
+                        top: 5,
+                        right: 30,
+                        left: 20,
+                        bottom: 5,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="USA" stroke="#8884d8" activeDot={{ r: 8 }} />
+                    <Line type="monotone" dataKey="China" stroke="#82ca9d" />
+                    <Line type="monotone" dataKey="Russia" stroke="#ffc658" />
+                </LineChart>
+            </ResponsiveContainer>
+        );
 
-    let currentSlide = 0;
-    const totalSlides = slides.length;
+        ReactDOM.render(<NuclearTrendChart />, document.getElementById('nuclearTrendChart'));
+    </script>
 
-    function updateSlider() {
-      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-      indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === currentSlide);
-      });
-    }
+    <!-- Slider and Animation Scripts -->
+    <script>
+        // Slider functionality
+        const slider = document.querySelector('.achievements-slider');
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+        const indicators = document.querySelectorAll('.indicator');
 
-    prevButton.addEventListener('click', () => {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      updateSlider();
-    });
+        let currentSlide = 0;
+        const totalSlides = slides.length;
 
-    nextButton.addEventListener('click', () => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlider();
-    });
-
-    indicators.forEach((indicator, index) => {
-      indicator.addEventListener('click', () => {
-        currentSlide = index;
-        updateSlider();
-      });
-    });
-
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlider();
-    }, 5000);
-
-    // Animate numbers when in view
-    function animateNumbers() {
-      const numbers = document.querySelectorAll('.stat-number');
-      
-      numbers.forEach(number => {
-        const target = parseFloat(number.dataset.value);
-        let current = 0;
-        const increment = target / 100;
-        const duration = 2000;
-        const steps = 100;
-        
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            current = target;
-            clearInterval(timer);
-          }
-          number.textContent = current.toFixed(1);
-        }, duration / steps);
-      });
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateNumbers();
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
         }
-      });
-    });
 
-    observer.observe(document.querySelector('.reality-check'));
-  </script>
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        });
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                updateSlider();
+            });
+        });
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }, 5000);
+
+        // Animate numbers when in view
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.stat-number');
+            
+            numbers.forEach(number => {
+                const target = parseFloat(number.dataset.value);
+                let current = 0;
+                const increment = target / 100;
+                const duration = 2000;
+                const steps = 100;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    number.textContent = current.toFixed(1);
+                }, duration / steps);
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target); // Prevent re-animation
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.querySelector('.reality-check'));
+    </script>
 </body>
 </html>
