@@ -283,8 +283,9 @@ body {
 
 .comparison-title {
   color: #ffcc00;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
   text-transform: uppercase;
 }
 
