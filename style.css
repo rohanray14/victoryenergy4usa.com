@@ -357,8 +357,12 @@ body {
   padding: 1.5rem;
   margin-bottom: 2rem;
   width: 100%;
-  height: 600px; /* Increase the height */
+  height: 400px; /* Increase the height */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recharts-line {
+  stroke-width: 8px !important;
 }
 
 /* Keep all your existing CSS styles exactly as they are, 
